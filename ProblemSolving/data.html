@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = ["neha", "supriya", "nitu", "kiya"];
+        console.log(arr)
+        // push element
+        const arr2=arr
+         arr.push("ritesh");
+        console.log(arr)
+        // console.log(arr2)
+
+        // maping
+        const arr3= arr.map((item, index, array)=>{
+            return item
+        })
+        arr2.push("bhai")
+        console.log(arr3)
+
+        const arr1=[23,456,12,76,90,25];
+        const arr4=arr1.map(val=>val*3);
+        console.log(arr4);
+        
+    </script>
+</body>
+</html>
