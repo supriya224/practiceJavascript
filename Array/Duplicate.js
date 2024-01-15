@@ -12,6 +12,8 @@ for(let i=0; i<arr.length; i++){
         data[arr[i]]++;
     }
 }
+
+//  time complexity o(n)
 console.log(data)
 for(let el in data){
     console.log(el)
