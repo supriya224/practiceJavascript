@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-size: 80px;
+        color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.write("normal pattern");
+
+      document.write("<br/>");
+      for (let i = 1; i <= 5; i++) {
+        // phle ye 5 times tk chlega uske bad
+        for (let j = 1; j <= i; j++) {
+          // agr j=1 hai to ek bar hoga next check krega ki j<=i hai to j++ krega next line aayega
+          // fir * print krk next jayega
+          // uske bad j=i hai to j++ jha i=1 tha ab i=2 hua to      ** ye print krega aise krte jayega jb tk i<=5 ke brabar na ho jaye
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+
+      document.write("<br/>");
+
+      document.write("opposite pattern");
+      document.write("<br/>");
+      for (let i = 0; i <= 5; i++) {
+        // phle ye 5 times tk chlega uske bad
+        for (let j = 1; j <= 5 - i; j++) {
+          // agr j=1 hai to ek bar hoga next check krega ki j<=i hai to j++ krega next line aayega
+          // fir * print krk next jayega
+          // uske bad j=i hai to j++ jha i=1 tha ab i=2 hua to      ** ye print krega aise krte jayega jb tk i<=5 ke brabar na ho jaye
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+    </script>
+  </body>
+</html>
+
+<!-- // *
+// **
+// ***
+// ****
+// *****
+ -->
